@@ -1,4 +1,4 @@
-import { StyleSheet, Text, View } from 'react-native'
+import { Text, View } from 'react-native'
 import { SplashScreen, Stack } from 'expo-router'
 import { useFonts } from 'expo-font'
 import { useEffect } from 'react'
@@ -35,7 +35,7 @@ const RootLayout = () => {
     <>
         <Stack>
             <Stack.Screen name="index"
-            option={{ headerShown: false}} />
+            options={{ headerShown: false}} />
         </Stack>
     </>
   )
@@ -43,11 +43,11 @@ const RootLayout = () => {
 
 export default RootLayout
 
-const styles = StyleSheet.create({
-    container: {
-        display: 'flex',
-        flex: 1,
-        alignItems: 'center',
-        justifyContent: 'center'
-    }
-})
+// const styles = StyleSheet.create({
+//     container: {
+//         display: 'flex',
+//         flex: 1,
+//         alignItems: 'center',
+//         justifyContent: 'center'
+//     }
+// })
